@@ -13,14 +13,19 @@ struct ContentView: View {
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     var body: some View {
             VStack{
-                Button("Open Cube"){
+                /*Button("Open Cube"){
                     Task{
                         await openImmersiveSpace(id: "ImmersiveSpace")
                     }
+                }*/
+            }
+            //.navigationTitle("Content")
+            //.padding()
+            .onAppear{
+                Task{
+                    await openImmersiveSpace(id: "ImmersiveSpace")
                 }
             }
-            .navigationTitle("Content")
-            .padding()
         /*RealityView{content in
                 Text("")
         }

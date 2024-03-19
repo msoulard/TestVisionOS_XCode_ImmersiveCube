@@ -18,6 +18,7 @@ def Xform "Root"
         rel material:binding = </Root/Cube/DefaultMaterial>
         double size = 0.2
         float3 xformOp:scale = (5, 5, 5)
+        float3 xformOp:translate = (0, 0.75, -1.5)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         def Material "DefaultMaterial"
