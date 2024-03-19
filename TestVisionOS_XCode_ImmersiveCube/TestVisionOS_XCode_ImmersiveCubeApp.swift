@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct TestVisionOS_XCode_ImmersiveCubeApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup(id: "Main") {
             ContentView()
         }
 
