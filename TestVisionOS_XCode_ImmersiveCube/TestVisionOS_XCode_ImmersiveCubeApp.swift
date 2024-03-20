@@ -16,6 +16,7 @@ struct TestVisionOS_XCode_ImmersiveCubeApp: App {
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
-        }.immersionStyle(selection: .constant(.full), in: .full)
+        }
     }
 }
+
